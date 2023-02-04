@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PARAS JAMWAL</title>
+</head>
+<body>
+    <section id="home"></section>
+    <header>
+        <nav id="navbar">
+            <h2> PARAS </h2>
+            
+        </nav>
+        <div class="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download">Resume</a></li>
+            </ul>
+        </div>
+
+        <!-- mobile css -->
+        <div class="mob-icon">
+            <i class="fa-solid fa-bars" onclick="Shownav()"></i>
+        </div>
+
+        <div id="mob-links">
+            <div id="menu-close">
+                <i  onclick="Closenav()" class="far fa-window-close"></i>
+            </div>
+            <ul>
+                <li><a href="#home" onclick="Closenav()">Home</a></li>
+                <li><a href="#about" onclick="Closenav()">About</a></li>
+                <li><a href="#skills-section" onclick="Closenav()">Skills</a></li>
+                <li><a href="#project" onclick="Closenav()">Projects</a></li>
+                <li><a href="#contact" onclick="Closenav()">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download" onclick="Closenav()">Resume</a></li>
+            </ul>
+        </div>
+        
+        
+        
+    </header>
+     <!-- Main Section -->
+    <main>
+        <div id="hero-section">
+            <div id="hero-text">
+                <h3>Hey👋 I'm </h3>
+                <h4>PARAS JAMWAL</h4>
+                <h5>I'm a <span style="color: #eb2632;">Java Backend Developer</span></h5>
+
+                <div id="hero-icons">
+                    <i class="fa-brands fa-linkedin" onclick="redirect('https://www.linkedin.com/in/paras-jamwal-311136247/')"></i>
+                    <i class="fa-brands fa-github" onclick="redirect('https://github.com/ParasThakur199')"></i>
+
+                    <button id="projects-b" onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')"> <span><i class="fa-solid fa-download"></i></span> Resume</button>
+                </div>
+            </div>
+             <div id="hero-image">
+                <img width="100%"src="https://img.freepik.com/free-vector/young-programmer-businessman-freelance-working-desk-with-laptop_40876-2661.jpg" alt="Coding ">
+             </div>
+        </div>
+    </main>
+
+   
+    
+
+    <section id="contact">
+
+        <div class="title">Contact</div>
+        <div class="divider"></div>
+        <div id="contact-1">
+           <div id="info">
+               <h4>Email:- parasjamwal19@gmail.com</h4>
+               <h4>Mobile :- +91 8219129679</h4>
+           </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <span>Created By Paras Jamwal</span>
+        </div>
+    </footer>
+
+
+    
+</body>
+<script src="scripts/script.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<script>
+ 
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "ParasThakur199", { responsive: true });
+</script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8EVEL9N4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L8EVEL9N4W');
+</script>
+</html>
