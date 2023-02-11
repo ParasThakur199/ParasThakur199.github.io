@@ -13,7 +13,7 @@
 
 <body>
     <section id="home"></section>
-    <header>
+    <header id="nav-menu">
         <nav id="navbar">
             <h2> PARAS </h2>
         </nav>
@@ -22,7 +22,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a
                         href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download">Resume</a>
@@ -43,10 +43,10 @@
                 <li><a href="#home" onclick="Closenav()">Home</a></li>
                 <li><a href="#about" onclick="Closenav()">About</a></li>
                 <li><a href="#skills" onclick="Closenav()">Skills</a></li>
-                <li><a href="#project" onclick="Closenav()">Projects</a></li>
+                <li><a href="#projects" onclick="Closenav()">Projects</a></li>
                 <li><a href="#contact" onclick="Closenav()">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download"
-                        onclick="Closenav()">Resume</a></li>
+                        onclick="Closenav()" id="resume-button-1">Resume</a></li>
             </ul>
         </div>
 
@@ -65,8 +65,8 @@
                             onclick="redirect('https://www.linkedin.com/in/paras-jamwal-311136247/')"></i>
                         <i class="fa-brands fa-github" onclick="redirect('https://github.com/ParasThakur199')"></i>
 
-                        <button id="projects-b"
-                            onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')">
+                        <button id="resume-button-2"
+                            onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')" >
                             <span><i class="fa-solid fa-download"></i></span> Resume</button>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
 
     <!-- About me Section -->
 
-    <section id="about" clas="nav-link about" >
+    <section id="about" class="nav-link about section" >
         <div class="title">About Me</div>
         <div class="divider"></div>
 
@@ -138,40 +138,40 @@
 
     </section>
 
-    <section id="project" class="nav-link projects" >
+    <section id="projects" class="nav-link projects" >
         <div class="title">Projects</div>
         <div class="divider"></div>
 
         <div id="main-projects">
 
-            <div class="p1" >
+            <div class="p1 project-card" >
                 <div>
                     <div class="p-img">
                         <img src="https://media.giphy.com/media/l46Cx1EkQmqryaSly/giphy.gif" alt="">
                     </div>
                     <div id="icons">
                         <div>
-                            <i class="fa-brands fa-github"
+                            <i class="fa-brands fa-github project-github-link"
                                 onclick="redirect('https://github.com/ParasThakur199/creepy-skin-4061')"></i>
-                            <i class="fa-solid fa-globe"
+                            <i class="fa-solid fa-globe project-deployed-link"
                                 onclick="redirect('https://coruscating-frangipane-928f79.netlify.app/')"></i>
                         </div>
                     </div>
                     <div id="p-desc">
-                        <span>
+                        <span class = "project-description">
                             Travelo_city is an E-commerce platform that helps to find home decor, furniture, and many
                             other goods.
                         </span>
                     </div>
                     <div class="tech-stack">
-                        <span>
+                        <span class="project-tech-stack">
                             Tech Stack: HTML | CSS | JavScript | LocalStorage
                         </span>
                     </div>
                 </div>
 
             </div>
-            <div class="p1">
+            <div class="p1 project-card">
                 <div>
                     <div class="p-img">
                         <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/E983_IO_Auto_Blog_HERO.gif"
@@ -180,27 +180,27 @@
                 </div>
                 <div id="icons">
                     <div>
-                        <i class="fa-brands fa-github"
+                        <i class="fa-brands fa-github project-github-link"
                             onclick="redirect('https://github.com/ParasThakur199/righteous-glove-4452')"></i>
-                        <i class="fa-solid fa-globe"
+                        <i class="fa-solid fa-globe project-deployed-link"
                             onclick="redirect('https://papaya-zuccutto-5a5056.netlify.app/')"></i>
                     </div>
 
                 </div>
                 <div id="p-desc">
-                    <span>
+                    <span class="project-description">
                         The company provides services to customers. who want to rent automobiles for short periods of
                         time for a fee.
                     </span>
                 </div>
                 <div class="tech-stack">
-                    <span>
+                    <span class="project-tech-stack">
                         TechStack: HTML | CSS | JavScript | LocalStorage
                     </span>
                 </div>
 
             </div>
-            <div class="p1">
+            <div class="p1 project-card">
                 <div>
                     <div class="p-img">
                         <iframe src="https://drive.google.com/file/d/1NBG9G2ck_LlP_B16sxnP_411oA37Uyv7/preview"
@@ -209,21 +209,21 @@
                 </div>
                 <div id="icons">
                     <div>
-                        <i class="fa-brands fa-github"
+                        <i class="fa-brands fa-github project-github-link"
                             onclick="redirect('https://github.com/ParasThakur199/obnoxious-nation-6743')"></i>
-                        <i class="fa-solid fa-globe"
+                        <i class="fa-solid fa-globe project-deployed-link"
                             onclick="redirect('https://drive.google.com/file/d/1NBG9G2ck_LlP_B16sxnP_411oA37Uyv7/view')"></i>
                     </div>
 
                 </div>
                 <div id="p-desc">
-                    <span>
+                    <span class="project-description">
                         A console-based mini-project that allows Admins and Students to register themselves
                         automatically & access their role-dependent features.
                     </span>
                 </div>
                 <div class="tech-stack">
-                    <span>
+                    <span class="project-tech-stack">
                         Tech Stack: JAVA | MySQL | JDBC
                     </span>
                 </div>
