@@ -1,27 +1,32 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PARAS JAMWAL</title>
 </head>
+
 <body>
     <section id="home"></section>
     <header>
         <nav id="navbar">
             <h2> PARAS </h2>
-            
         </nav>
         <div class="links">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download">Resume</a></li>
+                <li><a
+                        href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download">Resume</a>
+                </li>
             </ul>
         </div>
 
@@ -32,54 +37,230 @@
 
         <div id="mob-links">
             <div id="menu-close">
-                <i  onclick="Closenav()" class="far fa-window-close"></i>
+                <i onclick="Closenav()" class="far fa-window-close"></i>
             </div>
             <ul>
                 <li><a href="#home" onclick="Closenav()">Home</a></li>
                 <li><a href="#about" onclick="Closenav()">About</a></li>
-                <li><a href="#skills-section" onclick="Closenav()">Skills</a></li>
+                <li><a href="#skills" onclick="Closenav()">Skills</a></li>
                 <li><a href="#project" onclick="Closenav()">Projects</a></li>
                 <li><a href="#contact" onclick="Closenav()">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download" onclick="Closenav()">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download"
+                        onclick="Closenav()">Resume</a></li>
             </ul>
         </div>
-        
-        
-        
+
     </header>
-     <!-- Main Section -->
+    <!-- Main Section -->
     <main>
-        <div id="hero-section">
-            <div id="hero-text">
-                <h3>Hey👋 I'm </h3>
-                <h4>PARAS JAMWAL</h4>
-                <h5>I'm a <span style="color: #eb2632;">Java Backend Developer</span></h5>
+        <section class = "nav-link home" style="background-color: #f8f8f8;">
+            <div id="hero-section">
+                <div id="hero-text">
+                    <h3>Hey👋 I'm </h3>
+                    <h4>PARAS JAMWAL</h4>
+                    <h5>I'm a <span style="color: #eb2632;">Java Backend Developer</span></h5>
 
-                <div id="hero-icons">
-                    <i class="fa-brands fa-linkedin" onclick="redirect('https://www.linkedin.com/in/paras-jamwal-311136247/')"></i>
-                    <i class="fa-brands fa-github" onclick="redirect('https://github.com/ParasThakur199')"></i>
+                    <div id="hero-icons">
+                        <i class="fa-brands fa-linkedin"
+                            onclick="redirect('https://www.linkedin.com/in/paras-jamwal-311136247/')"></i>
+                        <i class="fa-brands fa-github" onclick="redirect('https://github.com/ParasThakur199')"></i>
 
-                    <button id="projects-b" onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')"> <span><i class="fa-solid fa-download"></i></span> Resume</button>
+                        <button id="projects-b"
+                            onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')">
+                            <span><i class="fa-solid fa-download"></i></span> Resume</button>
+                    </div>
+                </div>
+                <div id="hero-image">
+                    <img width="100%"
+                        src="https://img.freepik.com/free-vector/young-programmer-businessman-freelance-working-desk-with-laptop_40876-2661.jpg"
+                        alt="Coding ">
                 </div>
             </div>
-             <div id="hero-image">
-                <img width="100%"src="https://img.freepik.com/free-vector/young-programmer-businessman-freelance-working-desk-with-laptop_40876-2661.jpg" alt="Coding ">
-             </div>
-        </div>
+        </section>
     </main>
 
-   
-    
+    <!-- About me Section -->
+
+    <section id="about" clas="nav-link about" >
+        <div class="title">About Me</div>
+        <div class="divider"></div>
+
+
+        <div id="about-me">
+            <div>
+                <div id="about-img">
+                    <img src="img/about-me.png" alt="Profile">
+                </div>
+            </div>
+            <div>
+                <p>Aspiring Java Backend Developer specializes in Java, SpringBoot, JavaScript, HTML, and CSS. Intensely
+                    interested in obtaining a Backend Developer position and working on enhancing the product
+                    experience.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="nav-link skills">
+        <div class="title">Skills</div>
+        <div class="divider"></div>
+
+
+        <div id="skills-section">
+            <div>
+                <div class="skills-img"><img src="img/java.png" alt=""></div>
+                <div class="skills-img"><img src="img/springboot.png" alt=""></div>
+                <div class="skills-img"><img src="img/hibernate.jpg" alt=""></div>
+                <div class="skills-img"><img src="img/js.png" alt=""></div>
+
+            </div>
+            <div>
+                <div class="skills-img"><img src="img/dsa.png" alt=""></div>
+                <div class="skills-img"><img src="img/sql.png" alt=""></div>
+                <div class="skills-img"><img src="img/html.png " alt=""></div>
+                <div class="skills-img"><img src="img/css.png" alt=""></div>
+            </div>
+        </div>
+
+    <!-- </section> -->
+    <!-- <section id="Tools"> -->
+        <div class="title">Tools</div>
+        <div class="divider"></div>
+        <div id="tool">
+            <div>
+                <div class="skills-img"><img src="img/spring.jpg" alt=""></div>
+                <div class="skills-img"><img src="img/postman.jpg" alt=""></div>
+                <div class="skills-img"><img src="img/vscode.jpg" alt=""></div>
+                <div class="skills-img"><img src="img/git.png" alt=""></div>
+            </div>
+
+    </section>
+
+    <section id="project" class="nav-link projects" >
+        <div class="title">Projects</div>
+        <div class="divider"></div>
+
+        <div id="main-projects">
+
+            <div class="p1" >
+                <div>
+                    <div class="p-img">
+                        <img src="https://media.giphy.com/media/l46Cx1EkQmqryaSly/giphy.gif" alt="">
+                    </div>
+                    <div id="icons">
+                        <div>
+                            <i class="fa-brands fa-github"
+                                onclick="redirect('https://github.com/ParasThakur199/creepy-skin-4061')"></i>
+                            <i class="fa-solid fa-globe"
+                                onclick="redirect('https://coruscating-frangipane-928f79.netlify.app/')"></i>
+                        </div>
+                    </div>
+                    <div id="p-desc">
+                        <span>
+                            Travelo_city is an E-commerce platform that helps to find home decor, furniture, and many
+                            other goods.
+                        </span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>
+                            Tech Stack: HTML | CSS | JavScript | LocalStorage
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p1">
+                <div>
+                    <div class="p-img">
+                        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/E983_IO_Auto_Blog_HERO.gif"
+                            alt="">
+                    </div>
+                </div>
+                <div id="icons">
+                    <div>
+                        <i class="fa-brands fa-github"
+                            onclick="redirect('https://github.com/ParasThakur199/righteous-glove-4452')"></i>
+                        <i class="fa-solid fa-globe"
+                            onclick="redirect('https://papaya-zuccutto-5a5056.netlify.app/')"></i>
+                    </div>
+
+                </div>
+                <div id="p-desc">
+                    <span>
+                        The company provides services to customers. who want to rent automobiles for short periods of
+                        time for a fee.
+                    </span>
+                </div>
+                <div class="tech-stack">
+                    <span>
+                        TechStack: HTML | CSS | JavScript | LocalStorage
+                    </span>
+                </div>
+
+            </div>
+            <div class="p1">
+                <div>
+                    <div class="p-img">
+                        <iframe src="https://drive.google.com/file/d/1NBG9G2ck_LlP_B16sxnP_411oA37Uyv7/preview"
+                            width="100%" height="250px"></iframe>
+                    </div>
+                </div>
+                <div id="icons">
+                    <div>
+                        <i class="fa-brands fa-github"
+                            onclick="redirect('https://github.com/ParasThakur199/obnoxious-nation-6743')"></i>
+                        <i class="fa-solid fa-globe"
+                            onclick="redirect('https://drive.google.com/file/d/1NBG9G2ck_LlP_B16sxnP_411oA37Uyv7/view')"></i>
+                    </div>
+
+                </div>
+                <div id="p-desc">
+                    <span>
+                        A console-based mini-project that allows Admins and Students to register themselves
+                        automatically & access their role-dependent features.
+                    </span>
+                </div>
+                <div class="tech-stack">
+                    <span>
+                        Tech Stack: JAVA | MySQL | JDBC
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="github">
+        <div class="title">My Stats</div>
+        <div class="divider"></div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+        <div id="stats">
+            <div>
+                <img src="https://github-readme-stats.vercel.app/api?username=ParasThakur199&show_icons=true&locale=en"
+                    alt="ParasThakur" />
+            </div>
+            <div>
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=ParasThakur199&" alt="ParasThakur" />
+            </div>
+        </div>
+    </section>
+
 
     <section id="contact">
 
         <div class="title">Contact</div>
         <div class="divider"></div>
         <div id="contact-1">
-           <div id="info">
-               <h4>Email:- parasjamwal19@gmail.com</h4>
-               <h4>Mobile :- +91 8219129679</h4>
-           </div>
+            <div id="info">
+                <h4>Email:- parasjamwal19@gmail.com</h4>
+                <h4>Mobile :- +91 8219129679</h4>
+            </div>
         </div>
     </section>
     <footer>
@@ -89,29 +270,26 @@
     </footer>
 
 
-    
+
 </body>
 <script src="scripts/script.js"></script>
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 <script>
- 
+
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "ParasThakur199", { responsive: true });
 </script>
-    
-    <!-- Google tag (gtag.js) -->
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8EVEL9N4W"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-L8EVEL9N4W');
+    gtag('config', 'G-L8EVEL9N4W');
 </script>
+
 </html>

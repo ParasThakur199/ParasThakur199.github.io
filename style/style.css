@@ -44,46 +44,7 @@ img {
     text-align: justify;
 }
 
-@media (min-width:781px) {
 
-    #stats {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 31px;
-        gap: 55px;
-    }
-
-    #hero-section {
-        grid-template-columns: 1fr 0.7fr;
-
-    }
-
-    #about-me {
-        grid-template-columns: 1fr 1.3fr;
-
-    }
-
-    #about-me {
-        width: 90%;
-        display: grid;
-        margin: auto;
-        margin-top: 4rem;
-        align-items: center;
-    }
-
-    #main-projects {
-        width: 85%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-        gap: 22px;
-        margin-top: 62px;
-        margin-bottom: 69px;
-    }
-
-
-}
 
 #tool>div {
     display: grid;
@@ -219,7 +180,9 @@ header {
 }
 
 #about {
-    background: #80808005;
+    background: radial-gradient(circle, rgba(228,232,235,1) 14%, rgba(17,63,103,1) 96%); 
+    height: 90%;
+    /* background: #80808005; */
     padding-top: 1px;
 }
 
@@ -242,7 +205,7 @@ header {
     width: 40%;
 }
 
-#skills>div {
+#skills-section>div {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
@@ -261,7 +224,7 @@ header {
     margin-bottom: 19px;
 } */
 
-#skills>div>div {
+#skills-section>div>div {
     padding: 2px;
     display: flex;
     justify-content: center;
@@ -274,7 +237,7 @@ header {
     margin-bottom: 19px;
 }
 
-#skills {
+#skills-section {
     display: grid;
     width: 90%;
     margin: auto;
@@ -323,12 +286,19 @@ header {
 
 
 /* Project */
+
+#project{
+    background-color: #efcca5;
+    height: 1400px;
+}
 .p-img {
     width: 100%;
 }
 
 .p1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 32px;
 }
 
@@ -479,7 +449,7 @@ footer>div {
         padding: 17px;
     }
 
-    #skills>div {
+    #skills-section>div {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
@@ -515,11 +485,17 @@ footer>div {
         width: 70%;
     }
 
-    #tool>div>div , #skills>div>div {
+    #tool>div>div , #skills-section>div>div {
         height: 113px;
         width: 100px;
     }
+    #about{
+        height: 130% ;
+    }
 
+    #project{
+        height: 335%
+    }
 
 
 }
@@ -575,7 +551,52 @@ footer>div {
         width: 80%;
     }
 
+    #about{
+        height: 180% ;
+    }
 
+    #project{
+        height: 360%
+    }
+}
+
+@media (min-width:781px) {
+
+    #stats {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 31px;
+        gap: 55px;
+    }
+
+    #hero-section {
+        grid-template-columns: 1fr 0.7fr;
+
+    }
+
+    #about-me {
+        grid-template-columns: 1fr 1.3fr;
+
+    }
+
+    #about-me {
+        width: 90%;
+        display: grid;
+        margin: auto;
+        margin-top: 4rem;
+        align-items: center;
+    }
+
+    #main-projects {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        gap: 22px;
+        margin-top: 62px;
+        margin-bottom: 69px;
+    }
 
 
 }
