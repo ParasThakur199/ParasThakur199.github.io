@@ -287,7 +287,7 @@ header {
 
 /* Project */
 
-#project{
+#projects{
     background-color: #efcca5;
     height: 1400px;
 }
@@ -359,7 +359,7 @@ footer>div {
 /* Mobile CSS  */
 
 @media (max-width: 640px) {
-    #stats {
+    #github-stats-card {
         margin-top: 16px;
         display: flex;
         flex-direction: column;
@@ -493,7 +493,7 @@ footer>div {
         height: 130% ;
     }
 
-    #project{
+    #projects{
         height: 335%
     }
 
@@ -555,14 +555,14 @@ footer>div {
         height: 180% ;
     }
 
-    #project{
+    #projects{
         height: 360%
     }
 }
 
 @media (min-width:781px) {
 
-    #stats {
+    #github-stats-card {
         width: 100%;
         display: flex;
         justify-content: center;
