@@ -24,8 +24,8 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a
-                        href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download">Resume</a>
+                <li><a href="./pdf/Paras-Jamwal-Resume.pdf" class="nav-link resume" id="resume-button-1" download=""
+                        target="_blank" class="menu-btn">Resume</a>
                 </li>
             </ul>
         </div>
@@ -45,15 +45,16 @@
                 <li><a href="#skills" onclick="Closenav()">Skills</a></li>
                 <li><a href="#projects" onclick="Closenav()">Projects</a></li>
                 <li><a href="#contact" onclick="Closenav()">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download"
-                        onclick="Closenav()" id="resume-button-1" class="nav-link resume">Resume</a></li>
+                <li><a href="./pdf/Paras-Jamwal-Resume.pdf" class="nav-link resume" id="resume-button-1" download=""
+                        target="_blank" class="menu-btn">Resume</a>
+                </li>
             </ul>
         </div>
 
     </header>
     <!-- Main Section -->
     <main>
-        <section class = "nav-link home" style="background-color: #f8f8f8;">
+        <section class="nav-link home" id="home">
             <div id="hero-section">
                 <div id="hero-text">
                     <h3>Hey👋 I'm </h3>
@@ -65,9 +66,8 @@
                             onclick="redirect('https://www.linkedin.com/in/paras-jamwal-311136247/')"></i>
                         <i class="fa-brands fa-github" onclick="redirect('https://github.com/ParasThakur199')"></i>
 
-                        <button id="resume-button-2"
-                            onclick="download('https://drive.google.com/file/d/1LgwVOH59_bhQimF_WYnF81bQ2864WFJD/view?&export=download')" >
-                            <span><i class="fa-solid fa-download"></i></span> Resume</button>
+                        <a href="./pdf/Paras-Jamwal-Resume.pdf" id="resume-button-2" download=""
+                            target="_blank">Resume</a>
                     </div>
                 </div>
                 <div id="hero-image">
@@ -81,7 +81,7 @@
 
     <!-- About me Section -->
 
-    <section id="about" class="nav-link about section" >
+    <section id="about" class="nav-link about section">
         <div class="title">About Me</div>
         <div class="divider"></div>
 
@@ -107,44 +107,78 @@
         <div class="title">Skills</div>
         <div class="divider"></div>
 
-
         <div id="skills-section">
             <div>
-                <div class="skills-img"><img src="img/java.png" alt=""></div>
-                <div class="skills-img"><img src="img/springboot.png" alt=""></div>
-                <div class="skills-img"><img src="img/hibernate.jpg" alt=""></div>
-                <div class="skills-img"><img src="img/js.png" alt=""></div>
-
+                <div>
+                    <div class="skills-card-img"><img src="img/java.png" alt=""></div>
+                    <div class="skills-card-name"><h2>JAVA</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/springboot.png" alt=""></div>
+                    <div class="skills-card-name"><h2>SpringBoot</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/hibernate.jpg" alt=""></div>
+                    <div class="skills-card-name"><h2>Hibernate</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/js.png" alt=""></div>
+                    <div class="skills-card-name"><h2>JavaScript</h2></div>
+                </div>
             </div>
             <div>
-                <div class="skills-img"><img src="img/dsa.png" alt=""></div>
-                <div class="skills-img"><img src="img/sql.png" alt=""></div>
-                <div class="skills-img"><img src="img/html.png " alt=""></div>
-                <div class="skills-img"><img src="img/css.png" alt=""></div>
+                <div>
+                    <div class="skills-card-img"><img src="img/dsa.png" alt=""></div>
+                    <div class="skills-card-name"><h2>DSA</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/sql.png" alt=""></div>
+                    <div class="skills-card-name"><h2>SQL</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/html.png " alt=""></div>
+                    <div class="skills-card-name"><h2>HTML</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/css.png" alt=""></div>
+                    <div class="skills-card-name"><h2>CSS</h2></div>    
+                </div>
+                
             </div>
         </div>
-
-    <!-- </section> -->
-    <!-- <section id="Tools"> -->
+        
         <div class="title">Tools</div>
         <div class="divider"></div>
         <div id="tool">
             <div>
-                <div class="skills-img"><img src="img/spring.jpg" alt=""></div>
-                <div class="skills-img"><img src="img/postman.jpg" alt=""></div>
-                <div class="skills-img"><img src="img/vscode.jpg" alt=""></div>
-                <div class="skills-img"><img src="img/git.png" alt=""></div>
+                <div>
+                    <div class="skills-card-img"><img src="img/spring.jpg" alt=""></div>
+                    <div class="skills-card-name"><h2>Spring</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/postman.jpg" alt=""></div>
+                    <div class="skills-card-name"><h2>Postman</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/vscode.jpg" alt=""></div>
+                    <div class="skills-card-name"><h2>VSCode</h2></div>
+                </div>
+                <div>
+                    <div class="skills-card-img"><img src="img/git.png" alt=""></div>
+                    <div class="skills-card-name"><h2>Git</h2></div>
+                </div>
+                
             </div>
 
     </section>
 
-    <section id="projects" class="nav-link projects" >
+    <section id="projects" class="nav-link projects">
         <div class="title">Projects</div>
         <div class="divider"></div>
 
         <div id="main-projects">
 
-            <div class="p1 project-card" >
+            <div class="p1 project-card">
                 <div>
                     <div class="p-img">
                         <img src="https://media.giphy.com/media/l46Cx1EkQmqryaSly/giphy.gif" alt="">
@@ -158,9 +192,12 @@
                         </div>
                     </div>
                     <div id="p-desc">
-                        <span class="project-title"></span>
-                        <span class = "project-description">
-                            Travelo_city is an E-commerce platform that helps to find home decor, furniture, and many
+                        <span class="project-title">
+                            <center><b>Travelocity</b></center><br>
+                        </span>
+                        <span class="project-description">
+                            Travelo_city is an E-commerce platform that helps to find home decor, furniture, and
+                            many
                             other goods.
                         </span>
                     </div>
@@ -189,9 +226,12 @@
 
                 </div>
                 <div id="p-desc">
-                    <span class="project-title"></span>
+                    <span class="project-title">
+                        <center><b>Car Rental Website</b></center><br>
+                    </span>
                     <span class="project-description">
-                        The company provides services to customers. who want to rent automobiles for short periods of
+                        The company provides services to customers. who want to rent automobiles for short
+                        periods of
                         time for a fee.
                     </span>
                 </div>
@@ -219,7 +259,9 @@
 
                 </div>
                 <div id="p-desc">
-                    <span class="project-title"></span>
+                    <span class="project-title">
+                        <center><b> Automated Student Registration System </b></center><br>
+                    </span>
                     <span class="project-description">
                         A console-based mini-project that allows Admins and Students to register themselves
                         automatically & access their role-dependent features.
@@ -237,22 +279,38 @@
     </section>
 
     <section id="github">
-        <div class="title">My Stats</div>
-        <div class="divider"></div>
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
-        <div id="github-stats-card">
-            <div id="github-top-langs">
-                <img src="https://github-readme-stats.vercel.app/api?username=ParasThakur199&show_icons=true&locale=en"
-                    alt="ParasThakur" />
+        <div class="Container" id="stat">
+            <div class="sub-titl">My Stats</div>
+            <div class="divider"></div>
+            <div class="stats" style="width: 100%;">
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=ParasThakur199&theme=dark&hide_border=false&include_all_commits=true&count_private=false"
+                    alt="">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=ParasThakur199" alt="">
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ParasThakur199&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact"
+                    alt="">
             </div>
-            <div id="github-streak-stats">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=ParasThakur199&" alt="ParasThakur" />
+            <div class="calendar">
+                Loading stuff -->
+                Loading the data just for you.
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+
+    <script>
+
+        GitHubCalendar(".calendar", "ParasThakur199");
+
+        GitHubCalendar(".calendar", "ParasThakur199", { responsive: true });
+    </script>
 
 
     <section id="contact" class="nav-link contact">
@@ -276,14 +334,14 @@
 
 </body>
 <script src="scripts/script.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" class="react-activity-calendar">
+<!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" class="react-activity-calendar"> -->
 </script>
 <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-<script>
+<!-- <script>
 
-    // or enable responsive functionality:
+//     // or enable responsive functionality:
     GitHubCalendar(".calendar", "ParasThakur199", { responsive: true });
-</script>
+</script> -->
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8EVEL9N4W"></script>
